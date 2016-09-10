@@ -3,6 +3,36 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--新闻主界面-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f00">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/title_wangyi_img"
+            android:layout_margin="10dp"/>
+        <ImageView
+        android:id="@+id/fragment_news_keep"
+        android:layout_alignParentRight="true"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/keeplist"
+        />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/serch"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/fragment_news_keep"/>
+
+
+    </RelativeLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,15 +42,22 @@
             android:id="@+id/news_tab"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            />
         <ImageView
             android:id="@+id/new_title_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"/>
+            android:src="@mipmap/downbtn"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9"
+        />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/news_vp"

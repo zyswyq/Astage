@@ -5,27 +5,73 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
+<!--主界面(就下面几个按钮)-->
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/main_vp"
+    <FrameLayout
+        android:id="@+id/main_frame"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        />
+        android:layout_weight="1"/>
 
     <View
         android:layout_width="match_parent"
-        android:background="#d9d9d9"
         android:layout_height="1dp"
-        />
-
-    <android.support.design.widget.TabLayout
-        android:id="@+id/main_tab"
+        android:background="#d9d9d9"/>
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:id="@+id/main_rgroup"
         android:layout_width="match_parent"
+        android:orientation="horizontal"
         android:layout_height="wrap_content"
-        android:background="#fff"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/main_rbtn_news"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="新闻"
+            android:textColor="@drawable/maintabtext"
+            android:button="@null"
+            android:textSize="16sp"
+            android:drawableTop="@drawable/news"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/main_rbtn_keep"
 
-        app:tabIndicatorColor="#fff"
-        app:tabGravity="fill"/>
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="直播"
+            android:textColor="@drawable/maintabtext"
+            android:button="@null"
+            android:drawableTop="@drawable/keep"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/main_rbtn_talk"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="话题"
+            android:textColor="@drawable/maintabtext"
+            android:button="@null"
+            android:drawableTop="@drawable/talk"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/main_rbtn_person"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="我"
+            android:textColor="@drawable/maintabtext"
+            android:button="@null"
+            android:drawableTop="@drawable/person"
+            android:gravity="center"/>
+
+    </RadioGroup>
 
 </LinearLayout>
