@@ -29,11 +29,12 @@ public class MainActivity extends AbsActivity{
         news=byview(R.id.main_rbtn_news);
         radioGroup=byview(R.id.main_rgroup);
 
+        FragmentManager fragmentManager1=getSupportFragmentManager();
+        final FragmentTransaction transaction1=fragmentManager1.beginTransaction();
 
-
-//        news.setChecked(true);
-//        transaction.replace(R.id.main_frame,new News_Fragment());
-//        transaction.commit();
+        news.setChecked(true);
+        transaction1.replace(R.id.main_frame,new News_Fragment());
+        transaction1.commit();
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
