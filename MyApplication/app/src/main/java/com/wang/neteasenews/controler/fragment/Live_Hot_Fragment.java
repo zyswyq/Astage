@@ -5,21 +5,22 @@ import android.os.Bundle;
 import com.wang.neteasenews.R;
 
 /**
- * Created by dllo on 16/9/10.
+ * Created by dllo on 16/9/14.
  */
-public class Person_Fragment extends AbsFragment{
+public class Live_Hot_Fragment extends AbsFragment{
 
-    public static Person_Fragment newInstance() {
+
+    public static Live_Hot_Fragment newInstance() {
         
         Bundle args = new Bundle();
         
-        Person_Fragment fragment = new Person_Fragment();
+        Live_Hot_Fragment fragment = new Live_Hot_Fragment();
         fragment.setArguments(args);
         return fragment;
     }
     @Override
     protected int setLayout() {
-        return R.layout.fragment_person;
+        return R.layout.fragment_live_hot;
     }
 
     @Override

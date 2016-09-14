@@ -6,8 +6,10 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.wang.neteasenews.R;
+import com.wang.neteasenews.controler.fragment.Live_Fragment;
 import com.wang.neteasenews.controler.fragment.News_Fragment;
 import com.wang.neteasenews.controler.fragment.Person_Fragment;
+import com.wang.neteasenews.controler.fragment.Talker_Fragment;
 
 
 public class MainActivity extends AbsActivity{
@@ -43,19 +45,19 @@ public class MainActivity extends AbsActivity{
                 switch (checkedId)
                 {
                     case R.id.main_rbtn_news:
-                        transaction.replace(R.id.main_frame,new News_Fragment());
+                        transaction.replace(R.id.main_frame, News_Fragment.newInstance());
                         transaction.commit();
                         break;
                     case R.id.main_rbtn_keep:
-                        transaction.replace(R.id.main_frame,new News_Fragment());
+                        transaction.replace(R.id.main_frame, Live_Fragment.newInstance());
                         transaction.commit();
                         break;
                     case R.id.main_rbtn_talk:
-                        transaction.replace(R.id.main_frame,new News_Fragment());
+                        transaction.replace(R.id.main_frame,Talker_Fragment.newInstance());
                         transaction.commit();
                         break;
                     case R.id.main_rbtn_person:
-                        transaction.replace(R.id.main_frame,new Person_Fragment());
+                        transaction.replace(R.id.main_frame,Person_Fragment.newInstance());
                         transaction.commit();
                         break;
                 }

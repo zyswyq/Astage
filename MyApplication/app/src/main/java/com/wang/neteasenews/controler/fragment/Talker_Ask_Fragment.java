@@ -5,21 +5,21 @@ import android.os.Bundle;
 import com.wang.neteasenews.R;
 
 /**
- * Created by dllo on 16/9/10.
+ * Created by dllo on 16/9/12.
  */
-public class Person_Fragment extends AbsFragment{
+public class Talker_Ask_Fragment extends AbsFragment{
 
-    public static Person_Fragment newInstance() {
-        
+    public static Talker_Ask_Fragment newInstance() {
+
         Bundle args = new Bundle();
-        
-        Person_Fragment fragment = new Person_Fragment();
+
+        Talker_Ask_Fragment fragment = new Talker_Ask_Fragment();
         fragment.setArguments(args);
         return fragment;
     }
     @Override
     protected int setLayout() {
-        return R.layout.fragment_person;
+        return R.layout.fragment_talk_ask;
     }
 
     @Override

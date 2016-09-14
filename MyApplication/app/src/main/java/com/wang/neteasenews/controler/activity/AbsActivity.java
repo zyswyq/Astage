@@ -22,12 +22,14 @@ public abstract class AbsActivity extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         Window window=getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         //Color.parseColor 将不是int类型的颜色转换为int类型
         //为状态栏添加新的颜色
         window.setStatusBarColor(Color.parseColor("#ff0000"));
+
         setContentView(setLayout());
         initView();
         initdatas();

@@ -21,6 +21,9 @@ public abstract class AbsFragment extends Fragment{
     protected abstract void initView();
     protected abstract void initDatas();
 
+
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
