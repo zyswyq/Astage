@@ -17,10 +17,6 @@ public class MainActivity extends AbsActivity{
     private RadioButton news;
     private RadioGroup radioGroup;
 
-
-
-
-
     @Override
     protected int setLayout() {
         return R.layout.activity_main;
@@ -30,7 +26,10 @@ public class MainActivity extends AbsActivity{
     protected void initView() {
         news=byview(R.id.main_rbtn_news);
         radioGroup=byview(R.id.main_rgroup);
+    }
 
+    @Override
+    protected void initdatas() {
         FragmentManager fragmentManager1=getSupportFragmentManager();
         final FragmentTransaction transaction1=fragmentManager1.beginTransaction();
 
@@ -63,15 +62,6 @@ public class MainActivity extends AbsActivity{
                 }
             }
         });
-
-
-
     }
-
-    @Override
-    protected void initdatas() {
-
-    }
-
 
 }

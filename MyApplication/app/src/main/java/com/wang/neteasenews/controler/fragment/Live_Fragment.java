@@ -16,10 +16,10 @@ import java.util.List;
  */
 public class Live_Fragment extends AbsFragment {
     private List<Fragment> fragments;
-    List<String> datas;
-    Live_Fragment_vp_Adapter adapter;
-    ViewPager vp;
-    TabLayout tab;
+    private List<String> datas;
+    private Live_Fragment_vp_Adapter adapter;
+    private ViewPager vp;
+    private TabLayout tab;
 
 
     public static Live_Fragment newInstance() {
@@ -48,6 +48,7 @@ public class Live_Fragment extends AbsFragment {
 
         fragments=new ArrayList<>();
         datas=new ArrayList<>();
+        build();
         adapter=new Live_Fragment_vp_Adapter(getChildFragmentManager());
         adapter.setContext(context);
         adapter.setDatas(datas);

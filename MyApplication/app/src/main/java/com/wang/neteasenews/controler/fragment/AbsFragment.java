@@ -17,6 +17,7 @@ import com.wang.neteasenews.controler.activity.AbsActivity;
 public abstract class AbsFragment extends Fragment{
 
     protected Context context;
+
     protected abstract int setLayout();
     protected abstract void initView();
     protected abstract void initDatas();

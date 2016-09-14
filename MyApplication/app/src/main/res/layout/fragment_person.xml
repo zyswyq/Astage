@@ -42,6 +42,7 @@
 
 
            <Button
+               android:id="@+id/person_signin_btn"
                android:layout_below="@id/person_first_Linear"
                android:layout_width="100dp"
                android:layout_height="30dp"
@@ -156,41 +157,18 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <RadioButton
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:textColor="#a7a7a7"
+                style="@style/button1"
                 android:text="阅读"
-                android:button="@null"
-                android:gravity="center"
-                android:drawableTop="@mipmap/ic_launcher"
-                android:layout_height="wrap_content" />
+                />
             <RadioButton
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:textColor="#a7a7a7"
                 android:text="收藏"
-                android:button="@null"
-                android:gravity="center"
-                android:drawableTop="@mipmap/ic_launcher"
-                android:layout_height="wrap_content" />
+                style="@style/button1" />
             <RadioButton
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:textColor="#a7a7a7"
                 android:text="跟帖"
-                android:button="@null"
-                android:gravity="center"
-                android:drawableTop="@mipmap/ic_launcher"
-                android:layout_height="wrap_content" />
+                style="@style/button1" />
             <RadioButton
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:textColor="#a7a7a7"
                 android:text="金币"
-                android:button="@null"
-                android:gravity="center"
-                android:drawableTop="@mipmap/ic_launcher"
-                android:layout_height="wrap_content" />
+                style="@style/button1" />
 
         </RadioGroup>
     </android.support.v7.widget.CardView>

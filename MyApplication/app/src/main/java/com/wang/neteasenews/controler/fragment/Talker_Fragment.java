@@ -15,11 +15,11 @@ import java.util.List;
  * Created by dllo on 16/9/12.
  */
 public class Talker_Fragment extends AbsFragment{
-    ViewPager talk;
-    TabLayout tabLayout;
+    private ViewPager talk;
+    private TabLayout tabLayout;
 
-    List<String>datas=new ArrayList<>();
-    List<Fragment>frag=new ArrayList<>();
+    private List<String>datas=new ArrayList<>();
+    private List<Fragment>frag=new ArrayList<>();
 
     public static Talker_Fragment newInstance() {
 

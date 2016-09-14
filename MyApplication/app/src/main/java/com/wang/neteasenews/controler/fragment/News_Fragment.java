@@ -14,9 +14,9 @@ import com.wang.neteasenews.R;
  * Created by dllo on 16/9/9.
  */
 public class News_Fragment extends AbsFragment{
-    ImageView keep_img,news_class;
+    private ImageView keep_img,news_class;
+    private int i=1;
 
-    int i=1;
     public static News_Fragment newInstance() {
         
         Bundle args = new Bundle();
