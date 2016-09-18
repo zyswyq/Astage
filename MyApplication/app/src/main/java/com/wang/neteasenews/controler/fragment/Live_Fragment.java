@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 
 import com.wang.neteasenews.R;
 import com.wang.neteasenews.controler.adapter.Live_Fragment_vp_Adapter;
@@ -13,6 +14,7 @@ import java.util.List;
 
 /**
  * Created by dllo on 16/9/12.
+ * 直播Fragment(只有ViewPager和Tablayout)
  */
 public class Live_Fragment extends AbsFragment {
     private List<Fragment> fragments;
@@ -61,6 +63,7 @@ public class Live_Fragment extends AbsFragment {
     {
         datas.add("热门");
         datas.add("分类");
+        Log.d("Live_Fragment", "未加载class");
         fragments.add(Live_Hot_Fragment.newInstance());
         fragments.add(Live_Class_Fragment.newInstance());
     }

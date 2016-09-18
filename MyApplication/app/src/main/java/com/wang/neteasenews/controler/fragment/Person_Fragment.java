@@ -10,6 +10,7 @@ import com.wang.neteasenews.controler.activity.SignInActivity;
 
 /**
  * Created by dllo on 16/9/10.
+ * 个人主界面
  */
 public class Person_Fragment extends AbsFragment implements View.OnClickListener {
     private Button signBtn;

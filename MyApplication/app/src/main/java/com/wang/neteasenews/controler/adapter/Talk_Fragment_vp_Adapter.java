@@ -9,6 +9,7 @@ import java.util.List;
 
 /**
  * Created by dllo on 16/9/12.
+ * 话题ViewPager的适配器
  */
 public class Talk_Fragment_vp_Adapter extends FragmentPagerAdapter{
 

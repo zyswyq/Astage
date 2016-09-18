@@ -12,6 +12,7 @@ import com.wang.neteasenews.R;
 
 /**
  * Created by dllo on 16/9/9.
+ * 新闻主界面
  */
 public class News_Fragment extends AbsFragment{
     private ImageView keep_img,news_class;
@@ -39,7 +40,7 @@ public class News_Fragment extends AbsFragment{
 
     @Override
     protected void initDatas() {
-        AnimationDrawable animationDrawable= (AnimationDrawable) keep_img.getBackground();
+        AnimationDrawable animationDrawable = (AnimationDrawable) keep_img.getBackground();
         animationDrawable.start();
         news_class.setOnClickListener(new View.OnClickListener() {
 

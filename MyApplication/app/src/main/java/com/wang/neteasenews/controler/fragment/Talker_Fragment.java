@@ -13,6 +13,7 @@ import java.util.List;
 
 /**
  * Created by dllo on 16/9/12.
+ * 话题主界面
  */
 public class Talker_Fragment extends AbsFragment{
     private ViewPager talk;

@@ -6,6 +6,7 @@ import com.wang.neteasenews.R;
 
 /**
  * Created by dllo on 16/9/14.
+ * 直播热门 界面
  */
 public class Live_Hot_Fragment extends AbsFragment{
 

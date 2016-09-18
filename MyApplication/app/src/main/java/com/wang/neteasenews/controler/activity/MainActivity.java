@@ -11,6 +11,7 @@ import com.wang.neteasenews.controler.fragment.News_Fragment;
 import com.wang.neteasenews.controler.fragment.Person_Fragment;
 import com.wang.neteasenews.controler.fragment.Talker_Fragment;
 
+//主界面的Activity
 
 public class MainActivity extends AbsActivity{
 

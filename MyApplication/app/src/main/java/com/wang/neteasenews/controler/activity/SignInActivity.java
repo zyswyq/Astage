@@ -4,12 +4,13 @@ import com.wang.neteasenews.R;
 
 /**
  * Created by dllo on 16/9/14.
+ * 登录界面Activity
  */
 public class SignInActivity extends AbsActivity{
 
     @Override
     protected int setLayout() {
-        return R.layout.signin_activity;
+        return R.layout.activity_signin;
     }
 
     @Override

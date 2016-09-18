@@ -6,6 +6,7 @@ import com.wang.neteasenews.R;
 
 /**
  * Created by dllo on 16/9/14.
+ * 话题 关注界面
  */
 public class Talker_Care_Fragment extends AbsFragment{
 

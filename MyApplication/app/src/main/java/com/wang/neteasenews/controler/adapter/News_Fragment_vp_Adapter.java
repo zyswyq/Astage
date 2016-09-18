@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 /**
  * Created by dllo on 16/9/10.
+ * 新闻界面ViewPAger的适配器
  */
 public class News_Fragment_vp_Adapter extends FragmentPagerAdapter{
 

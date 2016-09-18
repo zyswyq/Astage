@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/item_live_class_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/live_img"
+        />
+    <ImageView
+        android:id="@+id/item_live_class_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/item_live_class_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cdd"
+        android:textSize="20sp"
+        android:textColor="@color/colorwhite"
+        android:layout_above="@id/item_live_class_tag"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:id="@+id/item_live_class_personCount"
+        android:text="dde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_live_class_tag"
+        android:layout_alignParentBottom="true"
+        android:textColor="#fff"
+        android:layout_marginBottom="10dp"/>
+
+
+
+
+</RelativeLayout>

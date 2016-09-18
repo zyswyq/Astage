@@ -6,4 +6,5 @@
     <color name="colorgray">#d9d9d9</color>
     <color name="colorwhite">#fff</color>
     <color name="back">#f00</color>
+    <color name="dack">#30000000</color>
 </resources>
