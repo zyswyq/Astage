@@ -4,6 +4,7 @@ import java.util.List;
 
 /**
  * Created by dllo on 16/9/16.
+ * 直播分类页面的实体类
  */
 public class Live_class_All_Bean {
 

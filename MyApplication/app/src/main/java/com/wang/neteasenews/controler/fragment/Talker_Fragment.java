@@ -63,7 +63,7 @@ public class Talker_Fragment extends AbsFragment{
 
         frag.add(Talker_Ask_Fragment.newInstance());
         frag.add(Talker_Ask_Fragment.newInstance());
-        frag.add(Talker_Ask_Fragment.newInstance());
+        frag.add(Talker_Care_Fragment.newInstance());
 
 
     }

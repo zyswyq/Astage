@@ -67,7 +67,7 @@ public class Live_Class_LV_Adapter extends BaseAdapter{
         }
 
 
-        viewHolder.titleTv.setText(datas.getLive_review().get(position).getRoomName().toString());
+        viewHolder.titleTv.setText(datas.getLive_review().get(position).getRoomName().toLowerCase());
         viewHolder.tagTv.setText(datas.getLive_review().get(position).getUserCount()+"参与");
         Picasso.with(context).load(datas.getLive_review().get(position).getImage()).into(viewHolder.backimg);
 

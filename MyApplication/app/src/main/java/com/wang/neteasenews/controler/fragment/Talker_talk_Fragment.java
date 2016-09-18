@@ -25,12 +25,12 @@ public class Talker_talk_Fragment extends AbsFragment{
     }
 
     @Override
+
     protected void initView() {
 
     }
 
     @Override
     protected void initDatas() {
-
     }
 }
