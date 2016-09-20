@@ -5,11 +5,13 @@
     >
 
     <ImageView
+        android:id="@+id/talk_talk_ask_rv_img"
         android:src="@mipmap/ic_launcher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center" />
     <TextView
+        android:id="@+id/talk_talk_ask_rv_tv"
         android:text="标题"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

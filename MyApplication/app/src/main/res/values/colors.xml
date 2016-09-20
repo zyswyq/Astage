@@ -7,4 +7,5 @@
     <color name="colorwhite">#fff</color>
     <color name="back">#f00</color>
     <color name="dack">#30000000</color>
+    <color name="black">#000</color>
 </resources>

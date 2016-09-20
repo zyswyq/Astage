@@ -1,6 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:id="@+id/talk_talk_ask_back_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/talk_talk_ask_person_img"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:id="@+id/talk_talk_ask_person_tv"
+                android:layout_toRightOf="@id/talk_talk_ask_person_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="dsdfs"/>
+
+
+            <TextView
+                android:id="@+id/talk_talk_ask_main_tv"
+                android:text="df"
+                android:textColor="@color/black"
+                android:layout_below="@id/talk_talk_ask_back_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textSize="20sp"
+
+                android:maxLines="2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_below="@id/talk_talk_ask_main_tv">
+                <TextView
+                    android:id="@+id/talk_ask_class_tv"
+                    android:textColor="#09f"
+                    android:text="ssss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="10dp"
+                    android:layout_margin="6dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimaryDark"/>
+                <TextView
+                    android:id="@+id/talk_ask_care_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="10dp"
+                    android:layout_margin="6dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimaryDark"/>
+                <TextView
+                    android:id="@+id/talk_ask_answer_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="sd"
+                    android:textSize="15sp"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="38dp"
+                    android:background="@color/back"
+                    android:layout_margin="10dp"
+                    android:text="+关注"
+                    android:textColor="@color/colorwhite"
+                    />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

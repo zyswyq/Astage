@@ -11,6 +11,7 @@ import com.wang.neteasenews.R;
 public class Live_Hot_Fragment extends AbsFragment{
 
 
+
     public static Live_Hot_Fragment newInstance() {
         
         Bundle args = new Bundle();
