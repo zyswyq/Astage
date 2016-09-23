@@ -19,9 +19,7 @@ public class News_Fragment extends AbsFragment{
     private int i=1;
 
     public static News_Fragment newInstance() {
-        
         Bundle args = new Bundle();
-        
         News_Fragment fragment = new News_Fragment();
         fragment.setArguments(args);
         return fragment;

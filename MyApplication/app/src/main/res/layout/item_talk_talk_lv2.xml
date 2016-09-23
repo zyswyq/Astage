@@ -13,61 +13,48 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/item_talk_talk_title"
+                android:id="@+id/item_talk_talk_title1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:textSize="20sp"
                 android:textColor="#000"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#d9d9d9"
-                android:layout_margin="5dp"
-                />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_margin="5dp"
-                android:layout_marginTop="15dp">
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/item_talk_talk_person_img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:id="@+id/item_talk_talk_person_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:layout_gravity="center_vertical"
-                    android:maxLines="2"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_margin="5dp">
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/item_talk_talk_person_img2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:id="@+id/item_talk_talk_person_tv2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:layout_gravity="center_vertical"
-                    android:maxLines="2"/>
-            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="100dp">
+                <ImageView
+                    android:id="@+id/item_talk_talk_show1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"/>
+                <ImageView
+                    android:id="@+id/item_talk_talk_show2"
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="3dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/item_talk_talk_show3"
+                    android:layout_margin="3dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 >
                 <TextView
-                    android:id="@+id/item_talk_talk_class_tv"
+                    android:id="@+id/item_talk_talk_class_tv1"
                     android:textColor="#09f"
                     android:text="ssss"
                     android:layout_width="wrap_content"
@@ -82,7 +69,7 @@
                     android:layout_gravity="center"
                     android:background="@color/colorPrimaryDark"/>
                 <TextView
-                    android:id="@+id/item_talk_talk_care_tv"
+                    android:id="@+id/item_talk_talk_care_tv1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -95,7 +82,7 @@
                     android:layout_gravity="center"
                     android:background="@color/colorPrimaryDark"/>
                 <TextView
-                    android:id="@+id/item_talk_talk_answer_tv"
+                    android:id="@+id/item_talk_talk_answer_tv1"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
@@ -114,4 +101,5 @@
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
+
 </LinearLayout>

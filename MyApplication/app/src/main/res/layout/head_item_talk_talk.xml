@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/fragment_talk_talk">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            style="@style/talk_talk_head_item_card"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/talk_talk_head_img1"
+                    style="@style/talk_talk_head_item_img" />
+                <TextView
+                    android:id="@+id/talk_talk_head_tv1"
+                    style="@style/talk_talk_head_item_tv" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/talk_talk_head_item_card">
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/talk_talk_head_img2"
+                    style="@style/talk_talk_head_item_img" />
+                <TextView
+                    android:id="@+id/talk_talk_head_tv2"
+                    style="@style/talk_talk_head_item_tv" />
+            </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/talk_talk_head_item_card">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/talk_talk_head_img3"
+                        style="@style/talk_talk_head_item_img" />
+                    <TextView
+                        android:id="@+id/talk_talk_head_tv3"
+                        style="@style/talk_talk_head_item_tv" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/talk_talk_head_item_card">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/talk_talk_head_img4"
+                        style="@style/talk_talk_head_item_img" />
+                    <TextView
+                        android:id="@+id/talk_talk_head_tv4"
+                        style="@style/talk_talk_head_item_tv" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/talk_talk_head_item_card">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/talk_talk_head_img5"
+                        style="@style/talk_talk_head_item_img" />
+                    <TextView
+                        android:id="@+id/talk_talk_head_tv5"
+                        style="@style/talk_talk_head_item_tv" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</HorizontalScrollView>

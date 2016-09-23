@@ -62,7 +62,7 @@ public class Talker_Fragment extends AbsFragment{
         datas.add("关注");
 
         frag.add(Talker_Ask_Fragment.newInstance());
-        frag.add(Talker_Ask_Fragment.newInstance());
+        frag.add(Talker_talk_Fragment.newInstance());
         frag.add(Talker_Care_Fragment.newInstance());
 
 

@@ -23,4 +23,10 @@ public class NetUrl_Bean {
     //问吧 上方按钮
     public static String talk_askBtn="http://c.m.163.com/newstopic/list/classification.html";
 
+    //话题--话题页 (有部分关注的内容)
+    public static String talk_talkmain="http://topic.comment.163.com/topic/list/subject/0-10.html";
+    //话题--话题也(上方横向布局的内容)
+    public static String talk_talkhead="http://c.3g.163.com/recommend/getChanRecomNews?channel=T1460094487214&size=5&passport=&devId=gDn9on2hlxLeU2KQPKO0Hg%3D%3D&lat=WFohXxen8gCvC1M3MWheog%3D%3D&lon=0vcjy5VjEu7Leev0BzKr4w%3D%3D&version=15.0&net=wifi&ts=1474444807&sign=nErd43f036fl4cRWPHkKz2RU2OaWq%2F5Fad2vej1JZtt48ErR02zJ6%2FKXOnxX046I&encryption=1&canal=wandoujia_news&mac=l3cTD%2BGkuOp%2FGgZPUFWlsMniKsPhqwUPmAMQf86XLBg%3D";
+
+
 }

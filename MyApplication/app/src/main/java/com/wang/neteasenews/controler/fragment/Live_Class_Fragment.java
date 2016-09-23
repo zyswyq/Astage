@@ -5,18 +5,19 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 import com.wang.neteasenews.R;
 import com.wang.neteasenews.controler.adapter.Live_Class_LV_Adapter;
 import com.wang.neteasenews.model.bean.Live_class_All_Bean;
 import com.wang.neteasenews.model.bean.NetUrl_Bean;
+
+import org.json.JSONObject;
 
 /**
  * Created by dllo on 16/9/14.
@@ -98,17 +99,17 @@ public class Live_Class_Fragment extends AbsFragment implements View.OnClickList
     //解析传入的网址
     private void getdatas(String myUrl) {
         queue= Volley.newRequestQueue(context);
-        StringRequest sr=new StringRequest(MyUrl, new Response.Listener<String>() {
+        JsonObjectRequest sr=new JsonObjectRequest(MyUrl, null, new Response.Listener<JSONObject>() {
             @Override
-            public void onResponse(String response) {
+            public void onResponse(JSONObject response) {
                 Gson gson=new Gson();
-                Live_class_All_Bean Mybean=gson.fromJson(response,Live_class_All_Bean.class);
+                Live_class_All_Bean Mybean=gson.fromJson(response.toString(),Live_class_All_Bean.class);
                 adapter.setDatas(Mybean);
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(context, "失败了", Toast.LENGTH_SHORT).show();
+
             }
         });
         queue.add(sr);

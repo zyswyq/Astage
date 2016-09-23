@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="cdd"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textColor="@color/colorwhite"
         android:layout_above="@id/item_live_class_tag"
         android:layout_marginLeft="15dp"/>

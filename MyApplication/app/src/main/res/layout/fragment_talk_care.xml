@@ -56,19 +56,13 @@
                             android:layout_height="match_parent">
                             <ImageView
                                 android:id="@+id/talk_care_card1_img1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
                                 android:src="@mipmap/ic_launcher"
-                                />
+                                style="@style/talk_care_card" />
                             <TextView
                                 android:id="@+id/talk_care_card1_tv"
                                 android:layout_toRightOf="@id/talk_care_card1_img1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textSize="23sp"
+                                style="@style/talk_care_tv1"
                                 android:text="vgdf"
-                                android:layout_marginTop="10dp"
                                 />
                             <TextView
                                 android:id="@+id/talk_care_card1_tv2"
@@ -87,12 +81,7 @@
                                 android:textColor="#d9d9d9"
                                 android:layout_below="@id/talk_care_card1_tv"/>
                             <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@mipmap/ic_launcher"
-                                android:layout_alignParentRight="true"
-                                android:layout_centerVertical="true"
-                                android:layout_marginRight="10dp"/>
+                                style="@style/talk_care_img2" />
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
 
@@ -105,20 +94,14 @@
                     android:layout_height="match_parent">
                     <ImageView
                         android:id="@+id/talk_care_card2_img1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        style="@style/talk_care_card"
                         android:src="@mipmap/ic_launcher"
                         />
                     <TextView
                         android:id="@+id/talk_care_card2_tv"
                         android:layout_toRightOf="@id/talk_care_card2_img1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="23sp"
                         android:text="vgdf"
-                        android:layout_marginTop="10dp"
-                        />
+                        style="@style/talk_care_tv1" />
                     <TextView
                         android:id="@+id/talk_care_card2_tv2"
                         android:layout_width="wrap_content"
@@ -136,12 +119,7 @@
                         android:textColor="#d9d9d9"
                         android:layout_below="@id/talk_care_card2_tv"/>
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_launcher"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"/>
+                        style="@style/talk_care_img2"/>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 
@@ -154,19 +132,15 @@
                     android:layout_height="match_parent">
                     <ImageView
                         android:id="@+id/talk_care_card3_img1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        style="@style/talk_care_card"
                         android:src="@mipmap/ic_launcher"
                         />
                     <TextView
                         android:id="@+id/talk_care_card3_tv"
                         android:layout_toRightOf="@id/talk_care_card3_img1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="23sp"
+                        style="@style/talk_care_tv1"
                         android:text="vgdf"
-                        android:layout_marginTop="10dp"
+
                         />
                     <TextView
                         android:id="@+id/talk_care_card3_tv2"
@@ -185,12 +159,7 @@
                         android:textColor="#d9d9d9"
                         android:layout_below="@id/talk_care_card3_tv"/>
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_launcher"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"/>
+                        style="@style/talk_care_img2"/>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 
@@ -203,19 +172,14 @@
                     android:layout_height="match_parent">
                     <ImageView
                         android:id="@+id/talk_care_card4_img1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        style="@style/talk_care_card"
                         android:src="@mipmap/ic_launcher"
                         />
                     <TextView
                         android:id="@+id/talk_care_card4_tv"
                         android:layout_toRightOf="@id/talk_care_card4_img1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="23sp"
+                        style="@style/talk_care_tv1"
                         android:text="vgdf"
-                        android:layout_marginTop="10dp"
                         />
                     <TextView
                         android:id="@+id/talk_care_card4_tv2"
@@ -234,12 +198,7 @@
                         android:textColor="#d9d9d9"
                         android:layout_below="@id/talk_care_card4_tv"/>
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_launcher"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"/>
+                        style="@style/talk_care_img2"/>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 
@@ -276,11 +235,8 @@
                     <TextView
                         android:id="@+id/talk_care_card5_tv"
                         android:layout_toRightOf="@id/talk_care_card5_img1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="23sp"
+                        style="@style/talk_care_tv1"
                         android:text="vgdf"
-                        android:layout_marginTop="10dp"
                         />
                     <TextView
                         android:id="@+id/talk_care_card5_tv2"
@@ -299,12 +255,7 @@
                         android:textColor="#d9d9d9"
                         android:layout_below="@id/talk_care_card5_tv"/>
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_launcher"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"/>
+                        style="@style/talk_care_img2"/>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 
@@ -325,11 +276,8 @@
                     <TextView
                         android:id="@+id/talk_care_card6_tv"
                         android:layout_toRightOf="@id/talk_care_card6_img1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="23sp"
+                        style="@style/talk_care_tv1"
                         android:text="vgdf"
-                        android:layout_marginTop="10dp"
                         />
                     <TextView
                         android:id="@+id/talk_care_card6_tv2"
@@ -348,12 +296,7 @@
                         android:textColor="#d9d9d9"
                         android:layout_below="@id/talk_care_card6_tv"/>
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_launcher"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"/>
+                        style="@style/talk_care_img2"/>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 
@@ -374,11 +317,8 @@
                     <TextView
                         android:id="@+id/talk_care_card7_tv"
                         android:layout_toRightOf="@id/talk_care_card7_img1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="23sp"
+                        style="@style/talk_care_tv1"
                         android:text="vgdf"
-                        android:layout_marginTop="10dp"
                         />
                     <TextView
                         android:id="@+id/talk_care_card7_tv2"
@@ -397,12 +337,7 @@
                         android:textColor="#d9d9d9"
                         android:layout_below="@id/talk_care_card7_tv"/>
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_launcher"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"/>
+                        style="@style/talk_care_img2"/>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 
@@ -423,11 +358,8 @@
                     <TextView
                         android:id="@+id/talk_care_card8_tv"
                         android:layout_toRightOf="@id/talk_care_card8_img1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="23sp"
+                        style="@style/talk_care_tv1"
                         android:text="vgdf"
-                        android:layout_marginTop="10dp"
                         />
                     <TextView
                         android:id="@+id/talk_care_card8_tv2"
@@ -446,12 +378,7 @@
                         android:textColor="#d9d9d9"
                         android:layout_below="@id/talk_care_card8_tv"/>
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@mipmap/ic_launcher"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"/>
+                        style="@style/talk_care_img2"/>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 

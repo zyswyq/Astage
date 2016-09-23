@@ -3,10 +3,9 @@ package com.wang.neteasenews.model.bean;
 import java.util.List;
 
 /**
- * Created by dllo on 16/9/18.
- * 话题问吧 上方分类的图标和标题
+ * Created by dllo on 16/9/20.
  */
-public class Talk_ask_RecView_Bean {
+public class Talk_ask_title_btn_Bean {
 
     /**
      * message : 操作成功
