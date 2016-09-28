@@ -5,16 +5,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
 import com.wang.neteasenews.R;
 import com.wang.neteasenews.model.bean.NetUrl_Bean;
 import com.wang.neteasenews.model.bean.Talk_Talk_lv_Bean;
 import com.wang.neteasenews.model.bean.Talk_ask_listView_Bean;
+import com.wang.neteasenews.model.net.VolleyInstance;
+import com.wang.neteasenews.model.net.VolleyResult;
 
 /**
  * Created by dllo on 16/9/14.
@@ -82,13 +80,13 @@ public class Talker_Care_Fragment extends AbsFragment{
         setDAtas();
     }
 
+
     private void setDAtas() {
-        queue= Volley.newRequestQueue(context);
-        StringRequest sr=new StringRequest(url.talk_askmain, new Response.Listener<String>() {
+        VolleyInstance.getInstance().startRequest(url.talk_askmain, new VolleyResult() {
             @Override
-            public void onResponse(String response) {
+            public void success(String resultStr) {
                 Gson gson=new Gson();
-                Talk_ask_listView_Bean bean=gson.fromJson(response,Talk_ask_listView_Bean.class);
+                Talk_ask_listView_Bean bean=gson.fromJson(resultStr,Talk_ask_listView_Bean.class);
                 Picasso.with(context).load(bean.getData().getExpertList().get(0).getHeadpicurl()).into(cardimg5);
                 Picasso.with(context).load(bean.getData().getExpertList().get(1).getHeadpicurl()).into(cardimg6);
                 Picasso.with(context).load(bean.getData().getExpertList().get(2).getHeadpicurl()).into(cardimg7);
@@ -105,21 +103,19 @@ public class Talker_Care_Fragment extends AbsFragment{
                 card6tv3.setText(bean.getData().getExpertList().get(1).getAnswerCount()+"提问");
                 card7tv3.setText(bean.getData().getExpertList().get(2).getAnswerCount()+"提问");
                 card8tv3.setText(bean.getData().getExpertList().get(3).getAnswerCount()+"提问");
-
             }
 
-        }, new Response.ErrorListener() {
             @Override
-            public void onErrorResponse(VolleyError error) {
+            public void failture() {
 
             }
         });
 
-        StringRequest sr1=new StringRequest(url.talk_talkmain, new Response.Listener<String>() {
+        VolleyInstance.getInstance().startRequest(url.talk_talkmain, new VolleyResult() {
             @Override
-            public void onResponse(String response) {
-                Gson gson=new Gson();
-                Talk_Talk_lv_Bean bean=gson.fromJson(response,Talk_Talk_lv_Bean.class);
+            public void success(String resultStr) {
+                Gson gson = new Gson();
+                Talk_Talk_lv_Bean bean = gson.fromJson(resultStr, Talk_Talk_lv_Bean.class);
                 Picasso.with(context).load(bean.getData().getSubjectList().get(0).getPicurl()).into(cardimg1);
                 Picasso.with(context).load(bean.getData().getSubjectList().get(1).getPicurl()).into(cardimg2);
                 Picasso.with(context).load(bean.getData().getSubjectList().get(2).getPicurl()).into(cardimg3);
@@ -128,23 +124,22 @@ public class Talker_Care_Fragment extends AbsFragment{
                 card2tv1.setText(bean.getData().getSubjectList().get(1).getName());
                 card3tv1.setText(bean.getData().getSubjectList().get(2).getName());
                 card4tv1.setText(bean.getData().getSubjectList().get(3).getName());
-                card1tv2.setText(bean.getData().getSubjectList().get(0).getConcernCount()+"关注");
-                card2tv2.setText(bean.getData().getSubjectList().get(1).getConcernCount()+"关注");
-                card3tv2.setText(bean.getData().getSubjectList().get(2).getConcernCount()+"关注");
-                card4tv2.setText(bean.getData().getSubjectList().get(3).getConcernCount()+"关注");
-                card1tv3.setText(bean.getData().getSubjectList().get(0).getTalkCount()+"提问");
-                card2tv3.setText(bean.getData().getSubjectList().get(1).getTalkCount()+"提问");
-                card3tv3.setText(bean.getData().getSubjectList().get(2).getTalkCount()+"提问");
-                card4tv3.setText(bean.getData().getSubjectList().get(3).getTalkCount()+"提问");
+                card1tv2.setText(bean.getData().getSubjectList().get(0).getConcernCount() + "关注");
+                card2tv2.setText(bean.getData().getSubjectList().get(1).getConcernCount() + "关注");
+                card3tv2.setText(bean.getData().getSubjectList().get(2).getConcernCount() + "关注");
+                card4tv2.setText(bean.getData().getSubjectList().get(3).getConcernCount() + "关注");
+                card1tv3.setText(bean.getData().getSubjectList().get(0).getTalkCount() + "提问");
+                card2tv3.setText(bean.getData().getSubjectList().get(1).getTalkCount() + "提问");
+                card3tv3.setText(bean.getData().getSubjectList().get(2).getTalkCount() + "提问");
+                card4tv3.setText(bean.getData().getSubjectList().get(3).getTalkCount() + "提问");
             }
-        }, new Response.ErrorListener() {
+
             @Override
-            public void onErrorResponse(VolleyError error) {
+            public void failture() {
 
             }
         });
-        queue.add(sr);
-        queue.add(sr1);
-
     }
 }
+
+

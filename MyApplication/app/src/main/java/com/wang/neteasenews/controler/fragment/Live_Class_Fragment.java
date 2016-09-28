@@ -1,6 +1,7 @@
 package com.wang.neteasenews.controler.fragment;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.RadioButton;
@@ -50,27 +51,29 @@ public class Live_Class_Fragment extends AbsFragment implements View.OnClickList
     @Override
     protected void initView() {
         listView=byView(R.id.live_class_lv);
-        listView.setFocusable(false);
+        View view= LayoutInflater.from(context).inflate(R.layout.head_live_class,null);
+        listView.addHeaderView(view);
         adapter=new Live_Class_LV_Adapter(context);
 
-        RG1=byView(R.id.live_RG1);
-        RG2=byView(R.id.live_RG2);
-        RG3=byView(R.id.live_RG3);
 
-        rbtn1=byView(R.id.live_rbtn1);
-        rbtn2=byView(R.id.live_rbtn2);
-        rbtn3=byView(R.id.live_rbtn3);
-        rbtn4=byView(R.id.live_rbtn4);
-        rbtn5=byView(R.id.live_rbtn5);
-        rbtn6=byView(R.id.live_rbtn6);
-        rbtn7=byView(R.id.live_rbtn7);
-        rbtn8=byView(R.id.live_rbtn8);
-        rbtn9=byView(R.id.live_rbtn9);
-        rbtn10=byView(R.id.live_rbtn10);
-        rbtn11=byView(R.id.live_rbtn11);
-        rbtn12=byView(R.id.live_rbtn12);
-        rbtn13=byView(R.id.live_rbtn13);
-        rbtn14=byView(R.id.live_rbtn14);
+        RG1= (RadioGroup) view.findViewById(R.id.live_RG1);
+        RG2=(RadioGroup) view.findViewById(R.id.live_RG2);
+        RG3=(RadioGroup) view.findViewById(R.id.live_RG3);
+
+        rbtn1= (RadioButton) view.findViewById(R.id.live_rbtn1);
+        rbtn2=(RadioButton) view.findViewById(R.id.live_rbtn2);
+        rbtn3=(RadioButton) view.findViewById(R.id.live_rbtn3);
+        rbtn4=(RadioButton) view.findViewById(R.id.live_rbtn4);
+        rbtn5=(RadioButton) view.findViewById(R.id.live_rbtn5);
+        rbtn6=(RadioButton) view.findViewById(R.id.live_rbtn6);
+        rbtn7=(RadioButton) view.findViewById(R.id.live_rbtn7);
+        rbtn8=(RadioButton) view.findViewById(R.id.live_rbtn8);
+        rbtn9=(RadioButton) view.findViewById(R.id.live_rbtn9);
+        rbtn10=(RadioButton) view.findViewById(R.id.live_rbtn10);
+        rbtn11=(RadioButton) view.findViewById(R.id.live_rbtn11);
+        rbtn12=(RadioButton) view.findViewById(R.id.live_rbtn12);
+        rbtn13=(RadioButton) view.findViewById(R.id.live_rbtn13);
+        rbtn14=(RadioButton) view.findViewById(R.id.live_rbtn14);
 
         rbtn1.setOnClickListener(this);
         rbtn2.setOnClickListener(this);

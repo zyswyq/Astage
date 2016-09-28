@@ -1,18 +1,13 @@
 package com.wang.neteasenews.controler.fragment;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
@@ -21,6 +16,8 @@ import com.wang.neteasenews.controler.adapter.Talk_Talk_LV_Adapter;
 import com.wang.neteasenews.model.bean.NetUrl_Bean;
 import com.wang.neteasenews.model.bean.Talk_Talk_lv_Bean;
 import com.wang.neteasenews.model.bean.Talk_talk_head_Bean;
+import com.wang.neteasenews.model.net.VolleyInstance;
+import com.wang.neteasenews.model.net.VolleyResult;
 
 /**
  * Created by dllo on 16/9/14.
@@ -86,15 +83,11 @@ public class Talker_talk_Fragment extends AbsFragment{
     }
 
     private void getheadDatas(String myUrl) {
-
-        StringRequest sr=new StringRequest(myUrl, new Response.Listener<String>() {
+        VolleyInstance.getInstance().startRequest(myUrl, new VolleyResult() {
             @Override
-            public void onResponse(String response) {
+            public void success(String resultStr) {
                 Gson gson=new Gson();
-                head_bean=gson.fromJson(response,Talk_talk_head_Bean.class);
-                Log.d("rrrrr", String.valueOf(head_bean.get话题().size()));
-                Log.d("rrrrr", "进入了解析");
-
+                head_bean=gson.fromJson(resultStr,Talk_talk_head_Bean.class);
                 Picasso.with(context).load(head_bean.get话题().get(0).getPicUrl()).into(img1);
                 Picasso.with(context).load(head_bean.get话题().get(1).getPicUrl()).into(img2);
                 Picasso.with(context).load(head_bean.get话题().get(2).getPicUrl()).into(img3);
@@ -107,31 +100,29 @@ public class Talker_talk_Fragment extends AbsFragment{
                 tv4.setText("#"+head_bean.get话题().get(3).getTopicName()+"#");
                 tv5.setText("#"+head_bean.get话题().get(4).getTopicName()+"#");
             }
-        }, new Response.ErrorListener() {
+
             @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(context, "失败了", Toast.LENGTH_SHORT).show();
+            public void failture() {
+
             }
         });
-        queue.add(sr);
+
     }
 
     //解析传入的网址
     private void getdatas(String myUrl) {
-
-        StringRequest sr=new StringRequest(myUrl, new Response.Listener<String>() {
+        VolleyInstance.getInstance().startRequest(myUrl, new VolleyResult() {
             @Override
-            public void onResponse(String response) {
+            public void success(String resultStr) {
                 Gson gson=new Gson();
-                lv_bean=gson.fromJson(response,Talk_Talk_lv_Bean.class);
+                lv_bean=gson.fromJson(resultStr,Talk_Talk_lv_Bean.class);
                 adapter.setDatas(lv_bean);
             }
-        }, new Response.ErrorListener() {
+
             @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(context, "失败了", Toast.LENGTH_SHORT).show();
+            public void failture() {
+
             }
         });
-        queue.add(sr);
     }
 }

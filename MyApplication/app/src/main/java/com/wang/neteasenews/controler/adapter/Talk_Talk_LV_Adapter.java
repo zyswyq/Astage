@@ -41,7 +41,6 @@ public class Talk_Talk_LV_Adapter extends BaseAdapter {
 
     @Override
     public int getItemViewType(int position) {
-
         if (datas.getData().getSubjectList().get(position).getType() != 0) {
             return type2;
         } else {
@@ -102,12 +101,12 @@ public class Talk_Talk_LV_Adapter extends BaseAdapter {
                 viewHolder.fclass.setText(datas.getData().getSubjectList().get(position).getClassification());
                 viewHolder.title.setText("#"+datas.getData().getSubjectList().get(position).getName()+"#");
                 if (!datas.getData().getSubjectList().get(position).getTalkContent().get(0).getUserHeadPicUrl().isEmpty() && datas.getData().getSubjectList().get(position).getTalkContent().get(0).getUserHeadPicUrl() != null) {
-                    Picasso.with(context).load(datas.getData().getSubjectList().get(position).getTalkContent().get(0).getUserHeadPicUrl()).placeholder(R.mipmap.ic_launcher).error(R.mipmap.ic_launcher).resize(140,140).into(viewHolder.ans1img);
+                    Picasso.with(context).load(datas.getData().getSubjectList().get(position).getTalkContent().get(0).getUserHeadPicUrl()).placeholder(R.mipmap.ic_launcher).error(R.mipmap.ic_launcher).resize(90,90).into(viewHolder.ans1img);
                 } else {
                     viewHolder.ans1img.setImageResource(R.mipmap.morenperson);
                 }
                 if (!datas.getData().getSubjectList().get(position).getTalkContent().get(1).getUserHeadPicUrl().isEmpty() && datas.getData().getSubjectList().get(position).getTalkContent().get(1).getUserHeadPicUrl() != null) {
-                    Picasso.with(context).load(datas.getData().getSubjectList().get(position).getTalkContent().get(1).getUserHeadPicUrl()).placeholder(R.mipmap.ic_launcher).error(R.mipmap.ic_launcher).resize(140,140).into(viewHolder.ans2img);
+                    Picasso.with(context).load(datas.getData().getSubjectList().get(position).getTalkContent().get(1).getUserHeadPicUrl()).placeholder(R.mipmap.ic_launcher).error(R.mipmap.ic_launcher).resize(90,90).into(viewHolder.ans2img);
                 } else {
                     viewHolder.ans2img.setImageResource(R.mipmap.morenperson);
                 }

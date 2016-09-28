@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="50dp"
+    tools:showIn="@layout/fragment_live_class">
+
+    <RadioGroup
+        android:id="@+id/live_RG1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RadioButton
+            android:id="@+id/live_rbtn1"
+            android:text="TOP100"
+            style="@style/RadioButton_live" />
+
+        <RadioButton
+            android:id="@+id/live_rbtn2"
+            android:text="大直播"
+            style="@style/RadioButton_live" />
+
+        <RadioButton
+            android:id="@+id/live_rbtn3"
+            android:text="在现场"
+            style="@style/RadioButton_live" />
+
+        <RadioButton
+            android:id="@+id/live_rbtn4"
+            android:text="星在线"
+            style="@style/RadioButton_live" />
+
+        <RadioButton
+            android:id="@+id/live_rbtn5"
+            android:text="纵横谈"
+            style="@style/RadioButton_live" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/live_RG2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RadioButton
+            android:id="@+id/live_rbtn6"
+            android:text="咨询"
+            style="@style/RadioButton_live" />
+
+        <RadioButton
+            android:id="@+id/live_rbtn7"
+            android:text="娱乐"
+            style="@style/RadioButton_live" />
+
+        <RadioButton
+            android:id="@+id/live_rbtn8"
+            android:text="本地"
+            style="@style/RadioButton_live" />
+
+        <RadioButton
+            android:id="@+id/live_rbtn9"
+            android:text="体育"
+            style="@style/RadioButton_live" />
+
+        <RadioButton
+            android:id="@+id/live_rbtn10"
+            android:text="时尚"
+            style="@style/RadioButton_live" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/live_RG3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RadioButton
+            android:id="@+id/live_rbtn11"
+            android:text="汽车"
+            style="@style/RadioButton_live" />
+
+        <RadioButton
+            android:id="@+id/live_rbtn12"
+            android:text="科技"
+            style="@style/RadioButton_live" />
+
+        <RadioButton
+            android:id="@+id/live_rbtn13"
+            android:text="财经"
+            style="@style/RadioButton_live" />
+
+        <RadioButton
+            android:id="@+id/live_rbtn14"
+            android:text="生活"
+            style="@style/RadioButton_live" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+    </RadioGroup>
+</LinearLayout>

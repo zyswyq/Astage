@@ -8,7 +8,7 @@ import android.content.Context;
  * 提供context
  *
  */
-public class netnews extends Application{
+public class Netnews extends Application{
     private static Context context;
 
     @Override
