@@ -105,6 +105,7 @@ public class Talk_Talk_LV_Adapter extends BaseAdapter {
                 } else {
                     viewHolder.ans1img.setImageResource(R.mipmap.morenperson);
                 }
+
                 if (!datas.getData().getSubjectList().get(position).getTalkContent().get(1).getUserHeadPicUrl().isEmpty() && datas.getData().getSubjectList().get(position).getTalkContent().get(1).getUserHeadPicUrl() != null) {
                     Picasso.with(context).load(datas.getData().getSubjectList().get(position).getTalkContent().get(1).getUserHeadPicUrl()).placeholder(R.mipmap.ic_launcher).error(R.mipmap.ic_launcher).resize(90,90).into(viewHolder.ans2img);
                 } else {
