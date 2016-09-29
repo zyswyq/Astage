@@ -38,7 +38,8 @@ public class NetUrl_Bean {
     public static String news_NBA="http://c.3g.163.com/nc/article/list/T1348649145984/0-20.html";
     //社会
     public static String news_shehui="http://c.3g.163.com/nc/article/list/T1348648037603/0-20.html";
-
+    //段子
+    public static String news_duanzi="http://c.m.163.com/recommend/getChanListNews?channel=T1419316284722&size=20&offset=0&fn=1&passport=&devId=gDn9on2hlxLeU2KQPKO0Hg%3D%3D&lat=onCVxxyZePKCXp7LjeA5Mg%3D%3D&lon=dxNW2KjIWlDRVjbF0HaHTA%3D%3D&version=15.0&net=wifi&ts=1473251418&sign=uGeeGAmCWvvd%2F%2B4iqZTX0RYfd98MZXt7b1Q11HtL7Nh48ErR02zJ6%2FKXOnxX046I&encryption=1&canal=wandoujia_news&mac=l3cTD%2BGkuOp%2FGgZPUFWlsMniKsPhqwUPmAMQf86XLBg%3D";
 
 
 

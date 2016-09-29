@@ -13,52 +13,51 @@ import java.util.List;
 /**
  * Created by dllo on 16/9/28.
  */
-public class News_army_Bean {
-
+public class News_shehui_Bean {
 
     /**
-     * postid : PHOT235J700014T8
+     * postid : PHOT235MI000100A
      * hasCover : false
      * hasHead : 1
-     * replyCount : 104
-     * hasImg : 1
+     * replyCount : 1320
+     * hasImg : 0
      * digest :
      * hasIcon : true
-     * docid : 9IG74V5H00963VRO_C21L3KJEpicupdateDoc
-     * title : 歼11PK歼7！解放军空军二三代战机对抗演练
+     * docid : 9IG74V5H00963VRO_C220ITL9bjzhanglimengupdateDoc
+     * title : 石嘴山煤矿瓦斯爆炸事故救援继续开展
      * order : 1
-     * priority : 106
-     * lmodify : 2016-09-28 08:09:38
+     * priority : 120
+     * lmodify : 2016-09-28 15:52:52
      * boardid : photoview_bbs
-     * photosetID : 4T8E0001|2201191
+     * photosetID : 00AN0001|2201298
      * template : normal1
-     * votecount : 63
-     * skipID : 4T8E0001|2201191
-     * alias : Military
+     * votecount : 1241
+     * skipID : 00AN0001|2201298
+     * alias : Region
      * skipType : photoset
      * cid : C1348647991705
-     * hasAD : 1
-     * imgextra : [{"imgsrc":"http://cms-bucket.nosdn.127.net/1f843cd6da2d410b9f3a691d2e7aa6cf20160928080926.jpeg"},{"imgsrc":"http://cms-bucket.nosdn.127.net/f46521c3a468433cb26e021b04a7705920160928080926.jpeg"}]
+     * hasAD : 0
+     * imgextra : [{"imgsrc":"http://cms-bucket.nosdn.127.net/e6ca48426aaf4f7da52acaa33bcc34b120160928110903.jpeg"},{"imgsrc":"http://cms-bucket.nosdn.127.net/33fd0597ca1e483f96f711accabbab8520160928110904.jpeg"}]
      * source : 网易原创
-     * ename : junshi
-     * imgsrc : http://cms-bucket.nosdn.127.net/63883d6e892947e98ea9c33e3c6c23d920160928080926.jpeg
-     * tname : 军事
-     * ptime : 2016-09-28 07:47:17
+     * ename : shehui
+     * imgsrc : http://cms-bucket.nosdn.127.net/023f8310447746af8a4f2944993a5a3420160928111110.jpeg
+     * tname : 社会
+     * ptime : 2016-09-28 11:07:53
      */
 
-    private List<T1348648141035Bean> T1348648141035;
+    private List<T1348648037603Bean> T1348648037603;
 
-    public static News_army_Bean objectFromData(String str) {
+    public static News_shehui_Bean objectFromData(String str) {
 
-        return new Gson().fromJson(str, News_army_Bean.class);
+        return new Gson().fromJson(str, News_shehui_Bean.class);
     }
 
-    public static News_army_Bean objectFromData(String str, String key) {
+    public static News_shehui_Bean objectFromData(String str, String key) {
 
         try {
             JSONObject jsonObject = new JSONObject(str);
 
-            return new Gson().fromJson(jsonObject.getString(str), News_army_Bean.class);
+            return new Gson().fromJson(jsonObject.getString(str), News_shehui_Bean.class);
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -66,19 +65,19 @@ public class News_army_Bean {
         return null;
     }
 
-    public static List<News_army_Bean> arrayNews_army_BeanFromData(String str) {
+    public static List<News_shehui_Bean> arrayNews_shehui_BeanFromData(String str) {
 
-        Type listType = new TypeToken<ArrayList<News_army_Bean>>() {
+        Type listType = new TypeToken<ArrayList<News_shehui_Bean>>() {
         }.getType();
 
         return new Gson().fromJson(str, listType);
     }
 
-    public static List<News_army_Bean> arrayNews_army_BeanFromData(String str, String key) {
+    public static List<News_shehui_Bean> arrayNews_shehui_BeanFromData(String str, String key) {
 
         try {
             JSONObject jsonObject = new JSONObject(str);
-            Type listType = new TypeToken<ArrayList<News_army_Bean>>() {
+            Type listType = new TypeToken<ArrayList<News_shehui_Bean>>() {
             }.getType();
 
             return new Gson().fromJson(jsonObject.getString(str), listType);
@@ -92,15 +91,15 @@ public class News_army_Bean {
 
     }
 
-    public List<T1348648141035Bean> getT1348648141035() {
-        return T1348648141035;
+    public List<T1348648037603Bean> getT1348648037603() {
+        return T1348648037603;
     }
 
-    public void setT1348648141035(List<T1348648141035Bean> T1348648141035) {
-        this.T1348648141035 = T1348648141035;
+    public void setT1348648037603(List<T1348648037603Bean> T1348648037603) {
+        this.T1348648037603 = T1348648037603;
     }
 
-    public static class T1348648141035Bean {
+    public static class T1348648037603Bean {
         private String postid;
         private boolean hasCover;
         private int hasHead;
@@ -128,22 +127,22 @@ public class News_army_Bean {
         private String tname;
         private String ptime;
         /**
-         * imgsrc : http://cms-bucket.nosdn.127.net/1f843cd6da2d410b9f3a691d2e7aa6cf20160928080926.jpeg
+         * imgsrc : http://cms-bucket.nosdn.127.net/e6ca48426aaf4f7da52acaa33bcc34b120160928110903.jpeg
          */
 
         private List<ImgextraBean> imgextra;
 
-        public static T1348648141035Bean objectFromData(String str) {
+        public static T1348648037603Bean objectFromData(String str) {
 
-            return new Gson().fromJson(str, T1348648141035Bean.class);
+            return new Gson().fromJson(str, T1348648037603Bean.class);
         }
 
-        public static T1348648141035Bean objectFromData(String str, String key) {
+        public static T1348648037603Bean objectFromData(String str, String key) {
 
             try {
                 JSONObject jsonObject = new JSONObject(str);
 
-                return new Gson().fromJson(jsonObject.getString(str), T1348648141035Bean.class);
+                return new Gson().fromJson(jsonObject.getString(str), T1348648037603Bean.class);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -151,19 +150,19 @@ public class News_army_Bean {
             return null;
         }
 
-        public static List<T1348648141035Bean> arrayT1348648141035BeanFromData(String str) {
+        public static List<T1348648037603Bean> arrayT1348648037603BeanFromData(String str) {
 
-            Type listType = new TypeToken<ArrayList<T1348648141035Bean>>() {
+            Type listType = new TypeToken<ArrayList<T1348648037603Bean>>() {
             }.getType();
 
             return new Gson().fromJson(str, listType);
         }
 
-        public static List<T1348648141035Bean> arrayT1348648141035BeanFromData(String str, String key) {
+        public static List<T1348648037603Bean> arrayT1348648037603BeanFromData(String str, String key) {
 
             try {
                 JSONObject jsonObject = new JSONObject(str);
-                Type listType = new TypeToken<ArrayList<T1348648141035Bean>>() {
+                Type listType = new TypeToken<ArrayList<T1348648037603Bean>>() {
                 }.getType();
 
                 return new Gson().fromJson(jsonObject.getString(str), listType);

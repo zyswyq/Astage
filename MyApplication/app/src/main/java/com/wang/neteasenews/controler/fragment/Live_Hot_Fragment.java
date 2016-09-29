@@ -72,8 +72,6 @@ public class Live_Hot_Fragment extends AbsFragment{
                 datas=new ArrayList<>();
                 for (int i = 0; i <bean.getTop().size() ; i++) {
                     Rotate_Bean a=new Rotate_Bean(bean.getTop().get(i).getRoomName(),bean.getTop().get(i).getImage(),bean.getTop().get(i).getSource());
-                    Log.d("Live_Hot_Fragment", a.getImgurl());
-//                    Toast.makeText(context, a.getImgurl(), Toast.LENGTH_SHORT).show();
                     datas.add(a);
                 }
                 View view= rotateimgDemo.Rotate(datas,context);

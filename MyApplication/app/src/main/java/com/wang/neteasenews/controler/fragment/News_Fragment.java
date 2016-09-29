@@ -63,10 +63,10 @@ public class News_Fragment extends AbsFragment{
 
 
         fragments.add(Live_Hot_Fragment.newInstance());
-        fragments.add(Live_Hot_Fragment.newInstance());
-        fragments.add(Live_Hot_Fragment.newInstance());
-        fragments.add(Live_Hot_Fragment.newInstance());
-        fragments.add(Live_Hot_Fragment.newInstance());
+        fragments.add(News_army_Fragment.newInstance());
+        fragments.add(News_NBA_Fragment.newInstance());
+        fragments.add(News_historty_Fragment.newInstance());
+        fragments.add(News_duanzi_Fragment.newInstance());
         fragments.add(Live_Hot_Fragment.newInstance());
         fragments.add(Live_Hot_Fragment.newInstance());
         fragments.add(Live_Hot_Fragment.newInstance());
